@@ -13,6 +13,9 @@ RUN apk --update add git less openssh
 
 #Install aws-cli
 RUN apk --update add groff && \
+    apk add bash py-pip && \
+    apk add --virtual=build gcc libffi-dev musl-dev openssl-dev python-dev make && \
+    pip --no-cache-dir install -U pip && \
     pip install awscli
 
 #Clear caches
