@@ -12,7 +12,7 @@ This project offers a docker image good for development of terraform scripts for
             *   git version latest
             *   aws-cli version latest
  
- - create_container.sh - file which builds image and runs a container with the image previously created
+ - run_container.sh - file which builds image and runs a container with the image previously created
  
 # Instructions
  If you want to mount a folder from host machine into docker image, use the following command to map the folder to "/usr/work" from docker container:
